@@ -3,21 +3,26 @@
   "theme": "mint",
   "name": "Mint Starter Kit",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#1c44fc",
+    "light": "#64B5F6",
+    "dark": "#1c44fc"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Home",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Getting Started",
             "pages": [
               "introduction",
-              "quickstart",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Essentials",
+            "pages": [
               "development"
             ]
           },
@@ -36,6 +41,7 @@
       },
       {
         "tab": "API Reference",
+        "icon": "newspaper",
         "groups": [
           {
             "group": "API Documentation",
@@ -54,33 +60,18 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/logolonglight.png",
+    "dark": "/logo/logolongdark.png"
   },
   "navbar": {
     "links": [
+      {
+        "label": "Blog",
+        "href": "mailto:hi@mintlify.com"
+      },
       {
         "label": "Support",
         "href": "mailto:hi@mintlify.com"
@@ -94,9 +85,39 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+      "github": "https://github.com/yourusername",
+      "twitter": "https://twitter.com/yourusername"
+    },
+    "links": [
+      {
+        "header": "Product",
+        "items": [
+          {
+            "label": "Features",
+            "href": "https://yourdomain.com/features"
+          },
+          {
+            "label": "Pricing",
+            "href": "https://yourdomain.com/pricing"
+          }
+        ]
+      },
+      {
+        "header": "Company",
+        "items": [
+          {
+            "label": "About Us",
+            "href": "https://yourdomain.com/about"
+          },
+          {
+            "label": "Contact",
+            "href": "https://yourdomain.com/contact"
+          }
+        ]
+      }
+    ]
+  },
+  "contextual": {
+    "options": ["copy", "view", "chatgpt", "claude"]
   }
 }

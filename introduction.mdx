@@ -1,71 +1,64 @@
 ---
-title: Introduction
-description: "Welcome to the home of your new documentation"
+title: Reaction Repo Documentation
+sidebarTitle: Introduction
+description:
+icon: flag-checkered
+mode: wide
 ---
 
-<img
-  className="block dark:hidden"
-  src="/images/hero-light.png"
-  alt="Hero Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.png"
-  alt="Hero Dark"
-/>
+import { StartButton, HeroCard, Banner } from '/snippets/components.mdx';
 
-## Setting up
-
-The first step to world-class documentation is setting up your editing environments.
+Dive into our comprehensive documentation to explore reaction mechanisms, detailed explanations, and practice problems designed to enhance your understanding. Whether you're a student or an enthusiast, this is your launchpad to success in organic chemistry.
 
 <CardGroup cols={2}>
   <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
+    title="Detailed Entries"
+    icon="flask"
   >
-    Get your docs set up locally for easy development
+    Browse a comprehensive database of organic chemistry reactions with mechanisms and examples.
   </Card>
+  
   <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
+    title="Practice Problems"
+    icon="book-open"
   >
-    Preview your changes before you push to make sure they're perfect
+    Strengthen your understanding with practice problems and quizzes.
   </Card>
 </CardGroup>
 
-## Make it yours
+## Navigation
+<Tabs>
+  <Tab title="Using Quickstart">
 
-Update your docs to your brand and add valuable content for the best user conversion.
+<Tip>It is recommended for users to use Quickstart if they are unfamilar with the site layout and function.</Tip>
 
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/content/components/accordions"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/customers"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>
+    <Steps>
+  <Step title="Go to Quickstart">
+    Use this button to reach Quickstart or Click the Quickstart Tab on the sidebar.
+    <StartButton />
+  </Step>
+  <Step title="Choose Tutorials or Overviews">
+    More Detailed Instructions will be provided as to which choice provides information suited to your needs.
+  </Step>
+  <Step title="Enjoy Studying!">
+    You will then be redirected to your desired selection screen to study.
+  </Step>
+</Steps>
+  </Tab>
+  <Tab title="Using Topbar Tabs">
+  <Tip>Use the Topbar Tabs if you're familiar with the site layout or know what you need to study.</Tip>
+    <Steps>
+  <Step title="Choose Tutorials or Overviews.">
+    Assuming you know what in particular you wish to study. Tabs on the topbar provide direct links to reaction selection.
+  </Step>
+  <Step title="Enjoy Studying!">
+    You will be redirected to a selection area for reasons. If you are confused by what is offered. Please visit quickstart:
+    <StartButton />
+  </Step>
+</Steps>
+  </Tab>
+</Tabs>
+
+<br />
+
+<Banner />

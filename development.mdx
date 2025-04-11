@@ -1,107 +1,94 @@
 ---
-title: 'Development'
-description: 'Preview changes locally to update your docs'
+title: 'Arrow-Pushing Guide'
+description: 'Quick Guide to Arrow-Pushing and Key Reactions'
+icon: 'arrow-right'
 ---
 
-<Info>
-  **Prerequisite**: Please install Node.js (version 19 or higher) before proceeding. <br />
-  Please upgrade to ```docs.json``` before proceeding and delete the legacy ```mint.json``` file.
-</Info>
+## Goals 
 
-Follow these steps to install and run Mintlify on your operating system:
+hi
 
-**Step 1**: Install Mintlify:
+## Types of Arrows in Mechanisms
 
-<CodeGroup>
+<div className="text-center">
+  <div>
+      <img
+        className="block dark:hidden"
+        src="/images/1e vs 2elight.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        className="hidden dark:block"
+        src="/images/1e vs 2edark.png"
+        alt="Hero Dark"
+        title=""
+      />
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    The Two Types of Arrows used in Mechanisms.
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+  Representation of electron movement: Representation of electron movement: **two-electron (1 bond) processes (Full-arrow →) vs. one-electron (half bond) processes (Half-arrow ↷)**.
+  </p>
+</div>
 
-  ```bash npm
-  npm i -g mintlify
-  ```
+In organic and inorganic mechanisms, arrows are used to show **electron movement**.
 
-```bash yarn
-yarn global add mintlify
-```
+### Full Arrows (→) 
+  A **full curved arrow** represents the movement of **two electrons**, usually in **bond formation or breaking**. This applies to:
+  - Nucleophilic attacks
+  - Resonance structures  
+  - Electrophilic and nucleophilic reactions
+    - Nucleophiles **attack electrophiles** by donating an electron pair to form a new bond.
+    - Electrophiles **receive the  nucleophillic attack** to accept an electron pair to form a new bond.
 
-</CodeGroup>
+<Note> Nucleophiles donate electron pairs (electron-rich) vs. Electrophiles accept electron pairs (electron-poor).</Note>
 
-**Step 2**: Navigate to the docs directory (where the `docs.json` file is located) and execute the following command:
+### Half Arrows (↷)  
+  A **half-arrow** represents the movement of **one electron**, commonly seen in:
+  - Radical reactions  
+  - Homolytic bond cleavage  
+  - Radical propagation steps  
 
-```bash
-mintlify dev
-```
+<Note> There will be lots of examples in the entries of Reaction Repo of all reactions mentioned </Note>
 
-A local preview of your documentation will be available at `http://localhost:3000`.
+## Applications of the Arrows
 
-### Custom Ports
+### Bond Formation
 
-By default, Mintlify uses port 3000. You can customize the port Mintlify runs on by using the `--port` flag. To run Mintlify on port 3333, for instance, use this command:
+#### Full Arrow
 
-```bash
-mintlify dev --port 3333
-```
 
-If you attempt to run Mintlify on a port that's already in use, it will use the next available port:
 
-```md
-Port 3000 is already in use. Trying 3001 instead.
-```
+#### Half Arrow
 
-## Mintlify Versions
 
-Please note that each CLI release is associated with a specific version of Mintlify. If your local website doesn't align with the production version, please update the CLI:
 
-<CodeGroup>
+### Forming Resonance Structures
 
-```bash npm
-npm i -g mintlify@latest
-```
+<div className="text-center">
+  <div>
+      <img
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/step0light.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/step0dark.png"
+        alt="Hero Dark"
+        title=""
+      />
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Resonance forms of DMSO.
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+  DMSO is capable of undergoing resonance. The first step (1) towards the [Swern Oxidation](https://reactionrepo.mintlify.app/reactions/swern-oxidation/oxidation-with-oxalyl-chloride#oxidation-with-oxalyl-chloride)
+  </p>
+</div>
 
-```bash yarn
-yarn global upgrade mintlify
-```
+DMSO undergoes resonance, which is represented using a full arrow, indicating the movement of two electrons (one bond). This differs from one-electron processes (shown by half-arrows). The electron pair from the S=O double bond shifts toward oxygen, converting it into a single bond. Since oxygen gains an extra lone pair, it takes on a negative formal charge, while sulfur loses electron density, resulting in a positive charge.
 
-</CodeGroup>
-
-## Validating Links
-
-The CLI can assist with validating reference links made in your documentation. To identify any broken links, use the following command:
-
-```bash
-mintlify broken-links
-```
-
-## Deployment
-
-<Tip>
-  Unlimited editors available under the [Pro
-  Plan](https://mintlify.com/pricing) and above.
-</Tip>
-
-If the deployment is successful, you should see the following:
-
-<Frame>
-  <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
-</Frame>
-
-## Code Formatting
-
-We suggest using extensions on your IDE to recognize and format MDX. If you're a VSCode user, consider the [MDX VSCode extension](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) for syntax highlighting, and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for code formatting.
-
-## Troubleshooting
-
-<AccordionGroup>
-  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
-
-    This may be due to an outdated version of node. Try the following:
-    1. Remove the currently-installed version of mintlify: `npm remove -g mintlify`
-    2. Upgrade to Node v19 or higher.
-    3. Reinstall mintlify: `npm install -g mintlify`
-  </Accordion>
-
-  <Accordion title="Issue: Encountering an unknown error">
-  
-    Solution: Go to the root of your device and delete the \~/.mintlify folder. Afterwards, run `mintlify dev` again.
-  </Accordion>
-</AccordionGroup>
-
-Curious about what changed in the CLI version? [Check out the CLI changelog.](https://www.npmjs.com/package/mintlify?activeTab=versions)
