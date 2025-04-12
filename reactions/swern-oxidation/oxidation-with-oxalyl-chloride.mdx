@@ -1,0 +1,1157 @@
+---
+title: Oxidation with Oxalyl chloride
+description: 'Mild Oxidation Method using Oxalyl chloride as DMSO Activator'
+---
+
+<a href="https://doi.org/10.1016/0040-4020(78)80197-5" target="_blank" rel="noopener noreferrer">
+  <img
+    noZoom
+    className="block dark:hidden"
+    src="/reactions/swern-oxidation/RegularSwernOverviewL.png"
+    alt="Hero Light"
+  />
+  <img
+    noZoom
+    className="hidden dark:block"
+    src="/reactions/swern-oxidation/RegularSwernOverviewD.png"
+    alt="Hero Dark"
+  />
+</a>
+
+The Swern oxidation, developed by Kanji Omura and Daniel Swern in 1978, is a method used to oxidize primary alcohols to aldehydes and secondary alcohols to ketones using activated dimethyl sulfoxide (DMSO), oxalyl chloride as a oxidizing agent, triethylamine (TEA) and dichloromethane (DCM). <sup>**1**</sup>
+
+DMSO and Oxalyl chloride form a reactive salt (Lewis Acid) with the alcohol providing a good leaving group required for subsequent elimination.<sup>**1**</sup>
+
+## Finding the Product for a 1° Alcohol
+
+This section is a brief overview on how to find the product for a 1° Alcohol (Primary) using a example from a real scientific research paper.
+
+<div className="text-center">
+  <div>
+      <img
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/primql.png"
+        alt="Hero Light"
+        title="Swern Oxidation (Light Mode)"
+      />
+      <img
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/primqd.png"
+        alt="Hero Dark"
+        title="Swern Oxidation (Dark Mode)"
+      />
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Propose a Mechanism.
+  </p>
+</div>
+
+<AccordionGroup>
+
+<Accordion title="Where did this Reaction come from?">
+  <div className="text-center">
+  <div>
+    <a 
+      href="https://doi.org/10.1002/(SICI)1521-3765(19990104)5:1%3C121::AID-CHEM121%3E3.0.CO;2-O" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <img
+        noZoom
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/TaxolCitationNoBox.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        noZoom
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/TaxolCitationNoBoxD.png"
+        alt="Hero Dark"
+        title=""
+      />
+    </a>
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Condensed Synthesis Overview of the Asymmetric Total Synthesis of Taxol by Mukaiyama et al. (1999)
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+  This 61 step linear synthesis features Swern Oxidation for a total of 4 steps out of 61 steps. L-serine is the starting material and undergoes 61 steps to form Taxol.
+  </p>
+</div>
+
+For simplicity, this image summarizes the total steps displayed in the original paper by [Mukaiyama et al. (1999)](https://doi.org/10.1002/(SICI)1521-3765(19990104)5:1%3C121::AID-CHEM121%3E3.0.CO;2-O), showing that the synthesis of the Taxol underwent a 61 step linear synthesis. The full pathway is not shown in our example. This is to maintain clarity and focus on building towards when Swern Oxidation is used.
+
+</Accordion>
+
+<Accordion title="How is Swern Oxidation used?">
+  <div className="text-center">
+  <div>
+    <a 
+      href="https://doi.org/10.1002/(SICI)1521-3765(19990104)5:1%3C121::AID-CHEM121%3E3.0.CO;2-O" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <img
+        noZoom
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/RETROSYNLight.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        noZoom
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/RETROSYNDark.png"
+        alt="Hero Dark"
+        title=""
+      />
+    </a>
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Retrosynthetic Analysis of Taxol
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+ In 1999, Mukaiyama et al. published the Mukaiyama Asymmetric Total Synthesis of Taxol. Taxol, a well-known complex organic molecule, underwent retrosynthetic analysis, revealing an optically active ketone intermediate (3), which could be further simplified into a chiral aldehyde intermediate (4).
+  </p>
+</div>
+
+Retrosynthetic analysis is a technique in organic chemistry that breaks down complex molecules into simpler components by working backward. This method helps chemists plan a synthesis pathway by identifying key bonds to disconnect, guiding the creation of a forward-directing synthetic route.
+
+<a href="https://doi.org/10.1002/(SICI)1521-3765(19990104)5:1%3C121::AID-CHEM121%3E3.0.CO;2-O" target="_blank" rel="noopener noreferrer">
+  <img
+    noZoom
+    className="block dark:hidden"
+    src="/reactions/swern-oxidation/PRIMARYqboxl.png"
+    alt="Hero Light"
+  />
+  <img
+    noZoom
+    className="hidden dark:block"
+    src="/reactions/swern-oxidation/PRIMARYqboxd.png"
+    alt="Hero Dark"
+  />
+</a>
+
+As seen above, the chiral aldehyde intermediate (4), compound 18 undergoes a reduction via DIBAL and hexane as a solvent. Next, this reduced intermediate undergoes Swern Oxidation to form the chiral aldehyde intermediate (4).<sup>**2**</sup>
+
+</Accordion>
+
+</AccordionGroup>
+
+<Steps>
+  <Step title="Identify the Right Reagents">
+
+  <img
+  className="block dark:hidden"
+  src="/reactions/swern-oxidation/swernreagentslight.png"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/reactions/swern-oxidation/swernreagentsdark.png"
+  alt="Hero Dark"
+/>
+   DMSO is used alongside the preferred oxidizing agent Oxalyl chloride, TEA (Triethylamine) and DCM.
+
+    <Note> If you missed the [**Background section**](/reactionrepo/docs/oxidation-reactions/swern-oxidation) on the Swern Oxidation landing page, please check it out. It's highly recommended to review the information as it covers the key characteristics the reaction and the reactants. </Note>
+
+  </Step>
+  <Step title="Identify the Key Features of the Compound">
+    **Alcohol Type**
+
+     <img
+  className="block dark:hidden"
+  src="/images/AlcoholsNewR3Light.png"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/AlcoholsNewR3Dark.png"
+  alt="Hero Dark"
+/>
+
+These are the 3 main types of alcohols:
+- Primary
+- Secondary
+- Tertiary
+
+<Warning> Tertiary alcohols cannot go through Swern oxidation. </Warning>
+
+- Primary alcohols can go through Swern Oxidation to become an **Aldehyde**.
+
+By identifying the Alcohol Type, you now know the **product** to expect.
+
+  </Step>
+  <Step title="Identifying Side Chains and Alcohol Conversion">
+    <div className="text-center">
+  <div>
+      <img
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/primqlhigh.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/primqdhigh.png"
+        alt="Hero Dark"
+        title=""
+      />
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Tracking Side Chains and Alcohol Conversion.
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+  In Swern oxidation of primary alcohols, the process involves assigning one side chain (R) to understand the reaction better. 
+  </p>
+</div>
+
+ The colored side chain represents an R group that remains unchanged during the reaction. The alcohol group is selectively oxidized to form an aldehyde. For educational purposes, we conceptually assign the non-alcohol group as R (Side chain) to visualize the changes and reconstruct the molecule post-reaction.
+
+    <Tip>The molecule isn’t taken apart during the reaction, but for understanding the process, we conceptually take it apart to visualize the changes. This allows for easy reconstruction of the molecule after oxidation, emphasizing the selective nature of the reaction for educational purposes.</Tip>
+  
+  **Guide to Side Chains**
+
+1. **Assign the Side Chain (R)**: Identify the non-alcohol part of the molecule and assign it as the placeholder 'R' or side chain.
+
+2. **Understand Its Role**: This placeholder helps track the unchanged part of the molecule, aiding in visualizing the structure before and after the reaction.
+
+3. **Focus on the Reaction Center**: The primary alcohol is selectively oxidized to form an aldehyde. The placeholder shows how the structure is altered.
+
+4. **Reassign the Side Chain**: After the reaction, reattach the placeholder R to the new aldehyde, demonstrating the unchanged nature of the side chain.
+
+**Disclaimer Warning for Writing Products**
+
+<div className="text-center">
+  <div>
+      <img
+        className="block dark:hidden"
+        src="/images/AldehydesWrittenL.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        className="hidden dark:block"
+        src="/images/AldehydesWrittenD.png"
+        alt="Hero Dark"
+        title=""
+      />
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Variations on how Aldehydes may appear.
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+  They may be differently presented in different questions as shown in the image, however they are the same structure. 
+  </p>
+</div>
+
+Once you've identified the correct reaction and product, you can now proceed to doing the mechanism.
+
+  </Step>
+</Steps>
+
+## Mechanism for 1° Alcohol
+
+This section is a brief overview on how to perform the mechanism for a 1° Alcohol (Primary) using the example from above.
+
+<Steps>
+  <Step title="DMSO undergoes Resonance">
+    
+<div className="text-center">
+  <div>
+      <img
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/step0light.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/step0dark.png"
+        alt="Hero Dark"
+        title=""
+      />
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Resonance forms of DMSO.
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+  DMSO is capable of undergoing resonance. This is important for the next step. 
+  </p>
+</div>
+
+In the first step of Swern Oxidation, DMSO undergoes resonance to prepare the DMSO to perform a nucleophilic attack on Oxalyl chloride.
+
+  </Step>
+  <Step title="Chlorosulfonium Ion Formation">
+    
+<div className="text-center">
+  <div>
+      <img
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/step1light.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/step1dark.png"
+        alt="Hero Dark"
+        title=""
+      />
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Nucleophillic attack using DMSO Resonance structure.
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+ DMSO Resonance Structure performs Nucleophilic Attack, Chloride Ion acts as a Leaving Group. 
+  </p>
+</div>
+
+In this step, the newly formed chromium-alcohol complex undergoes protonation. This protonation stabilizes the intermediate, preparing it for further rearrangement and facilitating the subsequent steps in the oxidation process.
+
+  </Step>
+  <Step title="Chlorodimethyl Sulfonium Ion and Byproduct Formation">
+  
+  <div className="text-center">
+  <div>
+      <img
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/step2light.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/step2dark.png"
+        alt="Hero Dark"
+        title=""
+      />
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Chlorodimethyl Sulfonium Ion Formation.
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+The nucleophilic attack initiates proton transfer within the Chlorosulfonium Ion to form Chlorodimethyl Sulfonium Ion its byproduct.
+  </p>
+</div>
+
+In this step, the Chlorosulfonium Ion decomposes after proton transfer is initiated from the chloride ion. This action releases carbon dioxide, carbon monoxide and a chloride ion.
+
+  </Step>
+  
+  <Step title="Alcohol and Base Addition">
+  
+  <div className="text-center">
+  <div>
+      <img
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/step3light.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/steptestdark.png"
+        alt="Hero Dark"
+        title=""
+      />
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Addition of the Primary Alcohol and 2 equivalents of TEA (Triethylamine).
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+This process produces a alkoxysulfonium ion intermediate. However the octet rule is violated in the newly produced ion, so TEA (Triethylamine) is needed to stabilize the molecule for further transformation.
+  </p>
+</div>
+
+In this step, the primary alcohol is added and SN2 substitution occurs. Chloride is a good leaving group and leaves the Chlorosulfonium Ion to produce alkoxysulfonium ion intermediate. Next, 2 equivalents of TEA (Triethylamine) is added to neutralize changes and stabilize the intermediate. This eventually forms a sulfur ylide.
+
+</Step>
+
+ <Step title="Ylide Formation and Intramolecular Elimination">
+  
+  <div className="text-center">
+  <div>
+      <img
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/finalightstepprim.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/finalstepprimdark.png"
+        alt="Hero Dark"
+        title=""
+      />
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Aldehyde product and DMS byproduct Formation.
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+Sulfur Ylide decomposes to form DMS and the desired aldehyde product.
+  </p>
+</div>
+
+The Sulfur ylide undergoes intramolecular elimination to cleave the ylide into the desired product and by-products.
+
+  </Step>
+  
+</Steps>
+
+## Finding the Product for a 2° Alcohol
+This section is a brief overview on how to find the product for a 2° Alcohol (Secondary) using a example from a real scientific research paper.
+
+<div className="text-center">
+  <div>
+      <img
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/MechL1.png"
+        alt="Hero Light"
+        title="DMP Oxidation (Light Mode)"
+      />
+      <img
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/MechD1.png"
+        alt="Hero Dark"
+        title="DMP Oxidation (Dark Mode)"
+      />
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Propose a Mechanism for this Reaction <sup>**3**</sup>
+  </p>
+</div>
+
+Oxidation of a secondary alcohol intermediate to an ketone. The groundwork to determine the product is similar to how a primary alcohol is converted.
+
+<AccordionGroup>
+
+<Accordion title="Where did this Reaction come from?">
+  <div className="text-center">
+  <div>
+    <a 
+      href="https://pubs.acs.org/doi/10.1021/ja004325r" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <img
+        noZoom
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/MechL1.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        noZoom
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/MechD1.png"
+        alt="Hero Dark"
+        title=""
+      />
+    </a>
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+  
+  </p>
+</div>
+
+This section is under review
+
+</Accordion>
+
+<Accordion title="How is Swern Oxidation used?">
+  
+This section is under review
+
+</Accordion>
+
+</AccordionGroup>
+
+<Steps>
+  <Step title="Identify the Right Reagents">
+
+  <img
+  className="block dark:hidden"
+  src="/reactions/swern-oxidation/swernreagentslight.png"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/reactions/swern-oxidation/swernreagentsdark.png"
+  alt="Hero Dark"
+/>
+   DMSO is used alongside the preferred oxidizing agent Oxalyl chloride, TEA (Triethylamine) and DCM.
+
+    <Note> Once again if you missed the [**Background section**](/reactionrepo/docs/oxidation-reactions/swern-oxidation) on the Swern Oxidation landing page, please check it out. It's highly recommended to review the information as it covers the key characteristics the reaction and the reactants. </Note>
+
+  </Step>
+  <Step title="Identify the Key Features of the Compound">
+    **Alcohol Type**
+
+     <img
+  className="block dark:hidden"
+  src="/images/AlcoholsNewR3Light.png"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/AlcoholsNewR3Dark.png"
+  alt="Hero Dark"
+/>
+
+These are the 3 main types of alcohols:
+- Primary
+- Secondary
+- Tertiary
+
+<Warning> Tertiary alcohols cannot go through Swern oxidation. </Warning>
+
+- Primary alcohols can go through Swern Oxidation to become an **Aldehyde**.
+
+By identifying the Alcohol Type, you now know the **product** to expect.
+
+  </Step>
+  <Step title="Identifying Side Chains and Alcohol Conversion">
+    <div className="text-center">
+  <div>
+      <img
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/MechL1H.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/MechD1H.png"
+        alt="Hero Dark"
+        title=""
+      />
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Tracking Side Chains and Alcohol Conversion.
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+  In Swern oxidation of primary alcohols, the process involves assigning one side chain (R) to understand the reaction better. 
+  </p>
+</div>
+
+ The colored side chain represents an R group that remains unchanged during the reaction. The alcohol group is selectively oxidized to form an aldehyde. For educational purposes, we conceptually assign the non-alcohol group as R (Side chain) to visualize the changes and reconstruct the molecule post-reaction.
+
+    <Tip>The molecule isn’t taken apart during the reaction, but for understanding the process, we conceptually take it apart to visualize the changes. This allows for easy reconstruction of the molecule after oxidation, emphasizing the selective nature of the reaction for educational purposes.</Tip>
+  
+  **Guide to Side Chains**
+
+1. **Assign the Side Chain (R)**: Identify the non-alcohol part of the molecule and assign it as the placeholder 'R' or side chain.
+
+2. **Understand Its Role**: This placeholder helps track the unchanged part of the molecule, aiding in visualizing the structure before and after the reaction.
+
+3. **Focus on the Reaction Center**: The primary alcohol is selectively oxidized to form an aldehyde. The placeholder shows how the structure is altered.
+
+4. **Reassign the Side Chain**: After the reaction, reattach the placeholder R to the new aldehyde, demonstrating the unchanged nature of the side chain.
+
+Once you've identified the correct reaction and product, you can now proceed to doing the mechanism.
+
+  </Step>
+</Steps>
+
+## Mechanism for 2° Alcohol
+
+This section is a brief overview on how to perform the mechanism for a 2° Alcohol (Secondary) using the example from above.
+
+<Steps>
+  <Step title="DMSO undergoes Resonance">
+    
+<div className="text-center">
+  <div>
+      <img
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/step0light.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/step0dark.png"
+        alt="Hero Dark"
+        title=""
+      />
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Resonance forms of DMSO.
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+  DMSO is capable of undergoing resonance. This is important for the next step. 
+  </p>
+</div>
+
+In the first step of Swern Oxidation, DMSO undergoes resonance to prepare the DMSO to perform a nucleophilic attack on Oxalyl chloride.
+
+  </Step>
+  <Step title="Chlorosulfonium Ion Formation">
+    
+<div className="text-center">
+  <div>
+      <img
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/step1light.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/step1dark.png"
+        alt="Hero Dark"
+        title=""
+      />
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Nucleophillic attack using DMSO Resonance structure.
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+ DMSO Resonance Structure performs Nucleophilic Attack, Chloride Ion acts as a Leaving Group. 
+  </p>
+</div>
+
+In this step, the newly formed chromium-alcohol complex undergoes protonation. This protonation stabilizes the intermediate, preparing it for further rearrangement and facilitating the subsequent steps in the oxidation process.
+
+  </Step>
+  <Step title="Chlorodimethyl Sulfonium Ion and Byproduct Formation">
+  
+  <div className="text-center">
+  <div>
+      <img
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/step2light.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/step2dark.png"
+        alt="Hero Dark"
+        title=""
+      />
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Chlorodimethyl Sulfonium Ion Formation.
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+The nucleophilic attack initiates proton transfer within the Chlorosulfonium Ion to form Chlorodimethyl Sulfonium Ion its byproduct.
+  </p>
+</div>
+
+In this step, the Chlorosulfonium Ion decomposes after proton transfer is initiated from the chloride ion. This action releases carbon dioxide, carbon monoxide and a chloride ion.
+
+  </Step>
+  
+  <Step title="Alcohol and Base Addition">
+  
+  <div className="text-center">
+  <div>
+      <img
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/step3seclight.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/newstep3dark.png"
+        alt="Hero Dark"
+        title=""
+      />
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Addition of the Secondary Alcohol and 2 equivalents of TEA (Triethylamine).
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+This process produces a alkoxysulfonium ion intermediate. However the octet rule is violated in the newly produced ion, so TEA (Triethylamine) is needed to stabilize the molecule for further transformation. This process is the same as the primary alcohol, except there is an additional side chain.
+  </p>
+</div>
+
+In this step, the secondary alcohol is added and SN2 substitution occurs. Chloride is a good leaving group and leaves the Chlorosulfonium Ion to produce alkoxysulfonium ion intermediate. Next, 2 equivalents of TEA (Triethylamine) is added to neutralize changes and stabilize the intermediate. This eventually forms a sulfur ylide.
+
+</Step>
+
+ <Step title="Ylide Formation and Intramolecular Elimination">
+  
+  <div className="text-center">
+  <div>
+      <img
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/finalstepseclight.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/finalstepsecdark.png"
+        alt="Hero Dark"
+        title=""
+      />
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Ketone product and DMS byproduct Formation.
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+Sulfur Ylide decomposes to form DMS and the desired ketone product.
+  </p>
+</div>
+
+The Sulfur ylide undergoes intramolecular elimination to cleave the ylide into the desired product and by-products.
+
+  </Step>
+  
+</Steps>
+
+## Sample Problems
+
+Test your Knowledge.
+
+### Question 1
+
+Predict the Product.
+
+<img
+    className="block dark:hidden"
+    src="/reactions/swern-oxidation/CoreyGuessLight.png"
+    alt="Hero Light"
+  />
+  <img
+    className="hidden dark:block"
+    src="/reactions/swern-oxidation/CoreyGuessDark.png"
+    alt="Hero Dark"
+  />
+
+<Accordion title="Reveal the Answer.">
+
+<div className="text-center">
+  <div>
+      <img
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/mechansd.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/mechansl.png"
+        alt="Hero Dark"
+        title=""
+      />
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+
+  </p>
+</div>
+
+This should form the expected aldehyde product as a result of oxidation of the primary alcohol on this compound.
+
+</Accordion>
+
+<AccordionGroup>
+
+<Accordion title="Where did this Reaction come from?">
+  <div className="text-center">
+  <div>
+    <a 
+      href="https://doi.org/10.1021/ja044089a" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <img
+        noZoom
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/COREYFULL1NBL.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        noZoom
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/COREYFULL1NBD.png"
+        alt="Hero Dark"
+        title=""
+      />
+    </a>
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Overall Synthesis of (+)-Pentacycloanammoxic Acid from the starting material cyclooctatetraene.
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+Cyclooctatetraene underwent a 15 step synthesis pathway to form the end product:(+)-Pentacycloanammoxic Acid.
+  </p>
+</div>
+
+For simplicity, this image summarizes total number of steps in the original paper by [Mascitti & Corey (2004)](https://doi.org/10.1021/ja044089a) to form the desired product (1). The full pathway is not shown to maintain clarity and focus on building towards when Swern oxidation is used.
+
+</Accordion>
+
+<Accordion title="How is Dess-Martin Oxidation used?">
+  <div className="text-center">
+  <div>
+    <a 
+      href="https://doi.org/10.1021/ja044089a" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <img
+        noZoom
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/coreycitenewl.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        noZoom
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/coreycitenewd.png"
+        alt="Hero Dark"
+        title=""
+      />
+    </a>
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+  
+  </p>
+</div>
+
+The starting material, Cyclooctatetraene underwent 10 steps until it reached the formation of compound 7. Compound 7 underwent subsequent reactions, including reduction from DIBAL-H and oxidation via Swern Oxidation to form compound 8. <sup>**4**</sup>
+
+</Accordion>
+
+</AccordionGroup>
+
+### Question 2
+Propose a Mechanism for this Reaction.
+
+<img
+    className="block dark:hidden"
+    src="/reactions/swern-oxidation/secondaryqlight.png"
+    alt="Hero Light"
+  />
+  <img
+    className="hidden dark:block"
+    src="/reactions/swern-oxidation/secondaryqdark.png"
+    alt="Hero Dark"
+  />
+
+<Warning>Hint: Do not confuse this with the [first example](/reactionrepo/docs/oxidation-reactions/swern-oxidation/oxidation-with-oxalyl-chloride/#finding-the-product-for-a-1-alcohol)</Warning>
+
+<Accordion title="Reveal the Answer.">
+
+<Steps>
+  <Step title="Identify the necessary side chain and product.">
+    
+<div className="text-center">
+  <div>
+      <img
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/secondaryqdark.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/secondaryqdhigh.png"
+        alt="Hero Dark"
+        title=""
+      />
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Tracking Side Chains and Alcohol Conversion in Swern Oxidation.
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+Be careful when assigning side chain placeholders. If you do not see a side chain visible that is not denoted by H or another group. Assume its a Methyl group. In the example, it was not shown, however for group tracking we have shown it in red.
+  </p>
+</div>
+
+When oxidizing secondary alcohols, the colored side chains represent unchanged R groups. The alcohol is selectively oxidized to form a ketone. For educational purposes, use R¹ and R² as placeholders for parts of the molecule, excluding the secondary alcohol and first side chain. This helps visualize the reaction and reconstruct the molecule post-oxidation.
+
+<Tip> The molecule isn't taken apart during the reaction, but for understanding the process, we conceptually take it apart to visualize the changes. Additionally for the sake of visual aid, we've slightly moved the yellow side chain group. </Tip>
+
+  </Step>
+  <Step title="Perform the Mechanism for Primary Alcohols">
+  
+<img
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/NewMechSecL.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/NewMechSecD.png"
+        alt="Hero Dark"
+        title=""
+      />
+
+  </Step>
+  <Step title="Reconstruct the final product.">
+  
+  Rewrite the new Ketone product.
+
+  </Step>
+</Steps>
+
+</Accordion>
+
+<AccordionGroup>
+
+<Accordion title="Where did this Reaction come from?">
+  <div className="text-center">
+  <div>
+    <a 
+      href="hhttps://doi.org/10.1002/(SICI)1521-3765(19990104)5:1%3C121::AID-CHEM121%3E3.0.CO;2-O" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <img
+        noZoom
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/TaxolCitationNoBox.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        noZoom
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/TaxolCitationNoBoxD.png"
+        alt="Hero Dark"
+        title=""
+      />
+    </a>
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Condensed Synthesis Overview of the Asymmetric Total Synthesis of Taxol by Mukaiyama et al. (1999)
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+This 61 step linear synthesis features Swern Oxidation for a total of 4 steps out of 61 steps.
+  </p>
+</div>
+
+For simplicity, this image summarizes the total steps displayed in the original paper by [Mukaiyama et al. (1999)](https://doi.org/10.1002/(SICI)1521-3765(19990104)5:1%3C121::AID-CHEM121%3E3.0.CO;2-O), showing that synthesis of the Taxol underwent a 61 step linear synthesis. The full pathway is not shown in our example. This is to maintain clarity and focus on building towards when Swern Oxidation is used.
+
+</Accordion>
+
+<Accordion title="How is Dess-Martin Oxidation used?">
+  <div className="text-center">
+  <div>
+    <a 
+      href="https://doi.org/10.1002/(SICI)1521-3765(19990104)5:1%3C121::AID-CHEM121%3E3.0.CO;2-O" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <img
+        noZoom
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/RETROSYNLight.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        noZoom
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/RETROSYNDark.png"
+        alt="Hero Dark"
+        title=""
+      />
+    </a>
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Retrosynthetic Analysis of Taxol.
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+ The Mukaiyama Asymmetric Total Synthesis of Taxol was published in 1999 by Mukaiyama et al (1999). Taxol, a well known and difficult complex organic molecule, underwent retrosynthetic analysis. This revealed a optically active ketone intermediate (3) which could be further broken down into another basic unit (4)
+  </p>
+</div>
+
+<Note>Reminder: Retrosynthetic analysis is a technique in organic chemistry that breaks down complex molecules into simpler components by working backward. This method helps chemists plan a synthesis pathway by identifying key bonds to disconnect, guiding the creation of a forward-directing synthetic route.</Note>
+
+<a href="https://doi.org/10.1002/(SICI)1521-3765(19990104)5:1%3C121::AID-CHEM121%3E3.0.CO;2-O" target="_blank" rel="noopener noreferrer">
+  <img
+    noZoom
+    className="block dark:hidden"
+    src="/reactions/swern-oxidation/secsourcedl.png"
+    alt="Hero Light"
+  />
+  <img
+    noZoom
+    className="hidden dark:block"
+    src="/reactions/swern-oxidation/secsourced.png"
+    alt="Hero Dark"
+  />
+</a>
+
+As seen in Scheme 5 of the paper, the synthesis of an optically active ketone (3) involved a single step process using two sets of reagent combinations. First, the alkylation (Grignard reaction) of compound 22 using Methyl Magnesium Bromide (MeMgBr) This yielded an alcohol intermediate. Next, this secondary alcohol intermediate was oxidized to a ketone (3) using Swern Oxidation (Oxidation with Oxalyl chloride).<sup>**2**</sup>
+
+</Accordion>
+
+</AccordionGroup>
+
+## Summary
+
+The reaction entry summary. Find the general scheme and full summarized mechanisms here.
+
+### General Scheme
+
+This section briefly summarizes what can and cannot undergo reactions.
+
+<img
+  className="block dark:hidden"
+  src="/reactions/swern-oxidation/lightsum.png"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/reactions/swern-oxidation/darksum.png"
+  alt="Hero Dark"
+/>
+
+- 1° Alcohols (Primary) get oxidized to **Aldehydes**.
+- 2° Alcohols (Secondary) get oxidized to **Ketones**.
+- 3° Alcohols (Tertiary) **do not** get oxidized at all.
+
+### General Mechanism
+
+This section briefly summarizes steps to find the product and perform the mechanisms.
+
+**Quick steps to finding the product for any alcohol**
+1. Identify the reagents.
+2. Assign side chains (non alcohol part).
+3. Selectively convert Alcohol to correct product based on alcohol type. Nothing else.
+4. Keep the side chains (non alcohol part) the same and piece together the full molecule together again.
+
+<Accordion title="Full Primary Mechanism">
+  
+<img
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/primarylightfullnonum.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/primfulldark.png"
+        alt="Hero Dark"
+        title=""
+      />
+
+</Accordion>
+
+<Accordion title="Full Secondary Mechanism">
+  
+<img
+        className="block dark:hidden"
+        src="/reactions/swern-oxidation/fullsecswernlight.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        className="hidden dark:block"
+        src="/reactions/swern-oxidation/fullsecswerndark.png"
+        alt="Hero Dark"
+        title=""
+      />
+
+</Accordion>
+
+<Tip>Always remember to repeatedly practice your mechanisms and getting your reagents correct. Take advantage of our materials and/or keep practicing on a whiteboard or paper until you get it right every single time. </Tip>
+
+## References
+
+<div>
+  <a 
+    href="https://doi.org/10.1016/0040-4020(78)80197-5" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <img
+      noZoom
+      class="block dark:hidden"
+      src="/reactions/swern-oxidation/citationlight1978.png"
+      alt="Omura Swern Light"
+    />
+    <img
+      noZoom
+      class="hidden dark:block"
+      src="/reactions/swern-oxidation/citationdark1978.png"
+      alt="Omura Swern Dark"
+    />
+  </a>
+</div>
+<p>
+  1. Omura, K.; Swern, D. Oxidation of Alcohols by “Activated” Dimethyl Sulfoxide. A Preparative, Steric and Mechanistic Study. 
+  <i>Tetrahedron</i> <b>1978</b>, <i>34</i> (11), 1651–1660. 
+  DOI: <a href="https://doi.org/10.1016/0040-4020(78)80197-5">10.1016/0040-4020(78)80197-5</a>
+</p>
+
+<div>
+  <a 
+    href="https://doi.org/10.1002/(SICI)1521-3765(19990104)5:1<121::AID-CHEM121>3.0.CO;2-O" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <img
+      noZoom
+      class="block dark:hidden"
+      src="/reactions/swern-oxidation/TaxolCitationNewBoxL.png"
+      alt="Taxol Light"
+    />
+    <img
+      noZoom
+      class="hidden dark:block"
+      src="/reactions/swern-oxidation/TaxolCitationNewBox.png"
+      alt="Taxol Dark"
+    />
+  </a>
+</div>
+<p>
+  2. Mukaiyama, T.; Shiina, I.; Iwadare, H.; Saitoh, M.; Nishimura, T.; Ohkawa, N.; Sakoh, H.; Nishimura, K.; Tani, Y.-i.; Hasegawa, M.; 
+  Yamada, K.; Saitoh, K. Asymmetric Total Synthesis of Taxol. 
+  <i>Chem. Eur. J.</i> <b>1999</b>, <i>5</i> (1), 121–161. 
+  DOI: <a href="https://doi.org/10.1002/(SICI)1521-3765(19990104)5:1<121::AID-CHEM121>3.0.CO;2-O">10.1002/(SICI)1521-3765(19990104)5:1&lt;121::AID-CHEM121&gt;3.0.CO;2-O</a>
+</p>
+
+<p>
+  3. Stork, G.; Niu, D.; Fujimoto, A.; Koft, E. R.; Balkovec, J. M.; Tata, J. R.; Dake, G. R. The First Stereoselective Total Synthesis of Quinine. 
+  <i>J. Am. Chem. Soc.</i> <b>2001</b>, <i>123</i> (14), 3239–3242. 
+  DOI: <a href="https://doi.org/10.1021/ja004325r">10.1021/ja004325r</a>
+</p>
+
+<div>
+  <a 
+    href="https://doi.org/10.1021/ja044089a" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <img
+      noZoom
+      class="block dark:hidden"
+      src="/reactions/swern-oxidation/COREYFULL1.png"
+      alt="Pentacycloanammoxic Acid Light"
+    />
+    <img
+      noZoom
+      class="hidden dark:block"
+      src="/reactions/swern-oxidation/COREYFULL2.png"
+      alt="Pentacycloanammoxic Acid Dark"
+    />
+  </a>
+</div>
+<p>
+  4. Mascitti, V.; Corey, E. J. Total Synthesis of (±)-Pentacycloanammoxic Acid. 
+  <i>J. Am. Chem. Soc.</i> <b>2004</b>, <i>126</i> (48), 15664–15665. 
+  DOI: <a href="https://doi.org/10.1021/ja044089a">10.1021/ja044089a</a>
+</p>

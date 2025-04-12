@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Reaction Repo",
   "colors": {
     "primary": "#1c44fc",
     "light": "#64B5F6",
@@ -23,39 +23,74 @@
           {
             "group": "Essentials",
             "pages": [
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "arrow-pushing-guide",
+              "additional-resources"
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
-        "icon": "newspaper",
+        "tab": "Tutorials",
+        "icon": "book-open",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Browse by Category",
             "pages": [
-              "api-reference/introduction"
+              "reactions/sort-alphabetically",
+              "reactions/sort-by-product"
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "Reaction Index",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              {
+                "group": "Oxidation Reactions",
+                "pages": [
+                  "reactions/jones-oxidation",
+                  "reactions/pinnick-oxidation",
+                  "reactions/corey-kim-oxidation",
+                  "reactions/moffat-pfitnzer-oxidation",
+                  "reactions/potassium-permanganate-oxidation",
+                  {
+                    "group": "Dess-Martin Oxidation",
+                    "pages": [
+                      "reactions/dess-martin-oxidation/oxidation-without-water"
+                    ]
+                  },
+                  {
+                    "group": "Swern Oxidation",
+                    "pages": [
+                      "reactions/swern-oxidation/oxidation-with-oxalyl-chloride",
+                      "reactions/swern-oxidation/oxidation-with-tfaa"
+                    ]
+                  },
+                  {
+                    "group": "Corey-Suggs Oxidation",
+                    "pages": [
+                      "reactions/corey-suggs-oxidation/oxidation-with-DCM"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Releases",
+        "icon": "git-merge", 
+        "groups": [
+          {
+            "group": "Release Notes",
+            "pages": [
+              "release-notes/2025",
+              "release-notes/2024"
+            ]
+          },
+          {
+            "group": "Roadmap",
+            "pages": [
+              "roadmap/planned-features"
             ]
           }
         ]
@@ -70,17 +105,17 @@
     "links": [
       {
         "label": "Blog",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://devthechemist-portfolio.vercel.app/blog"
       },
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:devthechemist@gmail.com"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Quickstart",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://reactionrepo.com/quickstart"
     }
   },
   "footer": {
@@ -90,24 +125,24 @@
     },
     "links": [
       {
-        "header": "Product",
+        "header": "Resources",
         "items": [
           {
-            "label": "Features",
-            "href": "https://yourdomain.com/features"
+            "label": "Tutorials",
+            "href": "https://reactionrepo.com/features"
           },
           {
-            "label": "Pricing",
+            "label": "Overviews",
             "href": "https://yourdomain.com/pricing"
           }
         ]
       },
       {
-        "header": "Company",
+        "header": "About Us",
         "items": [
           {
-            "label": "About Us",
-            "href": "https://yourdomain.com/about"
+            "label": "Mission Statement",
+            "href": "https://devthechemist-portfolio.vercel.app/"
           },
           {
             "label": "Contact",
