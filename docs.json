@@ -2,6 +2,9 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Reaction Repo",
+  "seo": {
+    "indexing": "all"
+  },
   "colors": {
     "primary": "#1c44fc",
     "light": "#64B5F6",
