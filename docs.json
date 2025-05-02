@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "maple",
   "name": "Reaction Repo",
   "seo": {
     "indexing": "all"
@@ -12,94 +12,109 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
-      {
-        "tab": "Home",
-        "groups": [
-          {
-            "group": "Getting Started",
-            "pages": [
-              "introduction",
-              "quickstart"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "arrow-pushing-guide",
-              "additional-resources"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Tutorials",
-        "icon": "book-open",
-        "groups": [
-          {
-            "group": "Browse by Category",
-            "pages": [
-              "reactions/sort-alphabetically",
-              "reactions/sort-by-product"
-            ]
-          },
-          {
-            "group": "Reaction Index",
-            "pages": [
-              {
-                "group": "Oxidation Reactions",
-                "pages": [
-                  "reactions/jones-oxidation",
-                  "reactions/pinnick-oxidation",
-                  "reactions/corey-kim-oxidation",
-                  "reactions/moffat-pfitnzer-oxidation",
-                  "reactions/potassium-permanganate-oxidation",
-                  {
-                    "group": "Dess-Martin Oxidation",
-                    "pages": [
-                      "reactions/dess-martin-oxidation/oxidation-without-water"
-                    ]
-                  },
-                  {
-                    "group": "Swern Oxidation",
-                    "pages": [
-                      "reactions/swern-oxidation/oxidation-with-oxalyl-chloride",
-                      "reactions/swern-oxidation/oxidation-with-tfaa"
-                    ]
-                  },
-                  {
-                    "group": "Corey-Suggs Oxidation",
-                    "pages": [
-                      "reactions/corey-suggs-oxidation/oxidation-with-DCM"
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Releases",
-        "icon": "git-merge", 
-        "groups": [
-          {
-            "group": "Release Notes",
-            "pages": [
-              "release-notes/2025",
-              "release-notes/2024"
-            ]
-          },
-          {
-            "group": "Roadmap",
-            "pages": [
-              "roadmap/planned-features"
-            ]
-          }
-        ]
-      }
-    ]
-  },
+  "dropdowns": [
+    {
+      "dropdown": "Home",
+      "icon": "house",
+      "description": "Introductory materials and core content",
+      "groups": [
+        {
+          "group": "Getting Started",
+          "pages": [
+            "introduction"
+          ]
+        },
+        {
+          "group": "Essentials",
+          "pages": [
+            "arrow-pushing-guide",
+            "additional-resources"
+          ]
+        }
+      ]
+    },
+    {
+      "dropdown": "Reactions",
+      "icon": "book-open",
+      "description": "Learn through examples and walkthroughs",
+      "groups": [
+        {
+          "group": "Browse by Category",
+          "pages": [
+            "reactions/sort-alphabetically",
+            "reactions/sort-by-product"
+          ]
+        },
+        {
+          "group": "Reaction Index",
+          "pages": [
+            {
+              "group": "Oxidation Reactions",
+              "pages": [
+                "reactions/jones-oxidation",
+                "reactions/pinnick-oxidation",
+                "reactions/corey-kim-oxidation",
+                "reactions/moffat-pfitnzer-oxidation",
+                "reactions/potassium-permanganate-oxidation",
+                {
+                  "group": "Dess-Martin Oxidation",
+                  "pages": [
+                    "reactions/dess-martin-oxidation/oxidation-without-water"
+                  ]
+                },
+                {
+                  "group": "Swern Oxidation",
+                  "pages": [
+                    "reactions/swern-oxidation/oxidation-with-oxalyl-chloride",
+                    "reactions/swern-oxidation/oxidation-with-tfaa"
+                  ]
+                },
+                {
+                  "group": "Corey-Suggs Oxidation",
+                  "pages": [
+                    "reactions/corey-suggs-oxidation/oxidation-with-DCM"
+                  ]
+                }
+              ]
+            },
+            {
+              "group": "Reduction Reactions",
+              "pages": [
+                "reactions/wolff-kishner-reduction",
+                {
+                  "group": "Birch Reduction",
+                  "pages": [
+                    "reactions/birch-reduction/reductive-alkylation-enones"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "dropdown": "Releases",
+      "icon": "gears",
+      "description": "Updates and development progress",
+      "groups": [
+        {
+          "group": "Release Notes",
+          "pages": [
+            "release-notes/2025",
+            "release-notes/2024"
+          ]
+        },
+        {
+          "group": "Roadmap",
+          "pages": [
+            "roadmap/planned-features"
+          ]
+        }
+      ]
+    }
+  ]
+},
   "logo": {
     "light": "/logo/logolonglight.png",
     "dark": "/logo/logolongdark.png"

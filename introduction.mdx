@@ -1,64 +1,61 @@
 ---
-title: Reaction Repo Documentation
-sidebarTitle: Introduction
-description:
-icon: rocket
-mode: wide
+title: "Introduction"
+description: "Start building modern documentation in under five minutes"
+icon: "book-open"
+mode: "custom"
 ---
 
-import { StartButton, HeroCard, Banner } from '/snippets/components.mdx';
+export const HeroCard = ({ imgLight, imgDark, title, description, href }) => {
+  return (
+    <a className="group cursor-pointer pb-8" href={href}>
+      <img
+        src={imgLight}
+        className="block dark:hidden pointer-events-none group-hover:scale-105 transition-all duration-100"
+        alt={`Light mode image for ${title}`}
+      />
+      <img
+        src={imgDark}
+        className="hidden dark:block pointer-events-none group-hover:scale-105 transition-all duration-100"
+        alt={`Dark mode image for ${title}`}
+      />
+      <h3 className="mt-5 text-gray-900 dark:text-zinc-50 font-medium">{title}</h3>
+      <p className="mt-1.5 text-gray-600 dark:text-zinc-400">{description}</p>
+    </a>
+  )
+}
 
-Dive into our comprehensive documentation to explore reaction mechanisms, detailed explanations, and practice problems designed to enhance your understanding. Whether you're a student or an enthusiast, this is your launchpad to success in organic chemistry.
+<div className="relative">
 
-<CardGroup cols={2}>
-  <Card
-    title="Detailed Entries"
-    icon="flask"
-  >
-    Browse a comprehensive database of organic chemistry reactions with mechanisms and examples.
-  </Card>
-  
-  <Card
-    title="Practice Problems"
-    icon="book-open"
-  >
-    Strengthen your understanding with practice problems and quizzes.
-  </Card>
-</CardGroup>
+  <div className="absolute top-0 left-0 right-0">
+    <img src="/hexy.svg" className="block dark:hidden pointer-events-none" />
+    <img src="/hexy.svg" className="hidden dark:block pointer-events-none" />
+  </div>
 
-## Navigation
-<Tabs>
-  <Tab title="Using Quickstart">
+  <div className="px-4 py-8 lg:py-24 lg:pb-12 max-w-3xl mx-auto">
+    <h1 className="text-4xl font-medium text-center text-gray-900 dark:text-zinc-50 tracking-tight">
+      Welcome to Reaction Repo
+    </h1>
 
-<Tip>It is recommended for users to use Quickstart if they are unfamilar with the site layout and function.</Tip>
+    <p className="max-w-xl mx-auto px-4 mt-4 text-lg text-center text-gray-500 dark:text-zinc-500">
+      Dive into our comprehensive documentation to explore reaction mechanisms, detailed explanations, and practice problems designed to enhance your understanding.
+    </p>
 
-    <Steps>
-  <Step title="Go to Quickstart">
-    Use this button to reach Quickstart or Click the Quickstart Tab on the sidebar.
-    <StartButton />
-  </Step>
-  <Step title="Choose Tutorials or Overviews">
-    More Detailed Instructions will be provided as to which choice provides information suited to your needs.
-  </Step>
-  <Step title="Enjoy Studying!">
-    You will then be redirected to your desired selection screen to study.
-  </Step>
-</Steps>
-  </Tab>
-  <Tab title="Using Topbar Tabs">
-  <Tip>Use the Topbar Tabs if you're familiar with the site layout or know what you need to study.</Tip>
-    <Steps>
-  <Step title="Choose Tutorials or Overviews.">
-    Assuming you know what in particular you wish to study. Tabs on the topbar provide direct links to reaction selection.
-  </Step>
-  <Step title="Enjoy Studying!">
-    You will be redirected to a selection area for reasons. If you are confused by what is offered. Please visit quickstart:
-    <StartButton />
-  </Step>
-</Steps>
-  </Tab>
-</Tabs>
+    <div className="px-6 lg:px-0 mt-12 lg:mt-24 grid sm:grid-cols-2 gap-x-6 gap-y-4">
+      <HeroCard
+        imgLight="/images/cardl.png"
+        imgDark="/images/cardd.png"
+        title="Tutorials"
+        description="Everything you need to know about performing the mechanisms for each reaction, from start to finish"
+        href="/oxidation-reactions/potassium-permanganate-oxidation"
+      />
+      <HeroCard
+        imgLight="/images/thumbnailblack.png"
+        imgDark="/images/thumbnailwhite.png"
+        title="Lab Techniques"
+        description="Explore a variety of Reactions including History, Reagent Preparation, Fun Facts and more..."
+        href="/oxidation-reactions/dess-martin-oxidation"
+      />
+    </div>
+  </div>
 
-<br />
-
-<Banner />
+</div>

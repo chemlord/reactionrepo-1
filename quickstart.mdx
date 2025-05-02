@@ -7,76 +7,42 @@ mode: wide
 
 import { StartButton, HeroCard, Banner } from '/snippets/components.mdx';
 
-<CardGroup>
-  <HeroCard
-  imgLight="https://chemlord.github.io/reactionrepo/docs/oxidation-reactions/potassium-permanganate-oxidation/potassium-permanganate-oxidation-tutorial/cardl.png"
-  imgDark="https://chemlord.github.io/reactionrepo/docs/oxidation-reactions/potassium-permanganate-oxidation/potassium-permanganate-oxidation-tutorial/cardd.png"
-  title="Tutorials"
-  description="Everything you need to know about performing the mechanisms for each reaction, from start to finish"
-  href="/your-link"
-/>
-<HeroCard
-  imgLight="https://chemlord.github.io/reactionrepo/docs/oxidation-reactions/dess-martin-oxidation/DMPOverviewLightFix.png"
-  imgDark="https://chemlord.github.io/reactionrepo/docs/oxidation-reactions/dess-martin-oxidation/DMPOverviewDarkFix.png"
-  title="Overviews"
-  description="Explore a variety of Reactions including History, Reagent Preparation, Fun Facts and more..."
-  href="/your-link"
-/>
-</CardGroup>
-
-## Content Comparison
-
+## Navigation
 <Tabs>
-  <Tab title="Tutorials">
+  <Tab title="Using Quickstart">
 
-<Tip>Tutorials focus on sections with the intent to teach mechanisms and go over practice problems.</Tip>
+<Tip>It is recommended for users to use Quickstart if they are unfamilar with the site layout and function.</Tip>
 
-<Frame>
-  <img src="/images/image.png" className="block dark:hidden" alt="Light mode image" />
-  <img src="/images/img.png" className="hidden dark:block" alt="Dark mode image" />
-</Frame>
-
-Tutorials are designed to provide step-by-step guides to performing reaction mechanisms, making them ideal for students who need a detailed understanding of how to execute and apply specific reactions. They focus on detailed mechanisms and procedural insights, helping learners grasp the intricacies of reaction intermediates, transition states, and stereochemistry (if applicable).
-
+    <Steps>
+  <Step title="Go to Quickstart">
+    Use this button to reach Quickstart or Click the Quickstart Tab on the sidebar.
+    <StartButton />
+  </Step>
+  <Step title="Choose Tutorials or Overviews">
+    More Detailed Instructions will be provided as to which choice provides information suited to your needs.
+  </Step>
+  <Step title="Enjoy Studying!">
+    You will then be redirected to your desired selection screen to study.
+  </Step>
+</Steps>
   </Tab>
-  <Tab title="Overviews">
-    
-<Tip>Overviews focus on sections with the intent to reaction variations, history and additional facts.</Tip>
-
-<Frame>
-  <img src="/images/overviewl.png" className="block dark:hidden" alt="Light mode image" />
-  <img src="/images/overviewd.png" className="hidden dark:block" alt="Dark mode image" />
-</Frame>
-
-Overviews, on the other hand, offer a broader exploration of reactions, delving into their history, reagents, and interesting facts. They emphasize contextual knowledge, reagent preparation, and fun insights, making them perfect for curious learners who want to go beyond the mechanics of reactions and engage with extra details. Topics in overviews often include historical significance, sourcing of reagents, unusual applications, and fascinating trivia.
-
+  <Tab title="Using Topbar Tabs">
+  <Tip>Use the Topbar Tabs if you're familiar with the site layout or know what you need to study.</Tip>
+    <Steps>
+  <Step title="Choose Tutorials or Overviews.">
+    Assuming you know what in particular you wish to study. Tabs on the topbar provide direct links to reaction selection.
+  </Step>
+  <Step title="Enjoy Studying!">
+    You will be redirected to a selection area for reasons. If you are confused by what is offered. Please visit quickstart:
+    <StartButton />
+  </Step>
+</Steps>
   </Tab>
 </Tabs>
 
-## More Information
+<br />
 
-<CardGroup cols={3}>
-  <Card
-    title="More Resources"
-    icon="book-open"
-  >
-    Can't find a reaction or need additional help? We've compiled some more resources to assist you.
-  </Card>
-  
-  <Card
-    title="Chemistry Blog"
-    icon="blog"
-  >
-    Want to see some applications of some reactions or personal findings in the chemistry community? Check me out!
-  </Card>
-
-  <Card
-    title="Have Suggestions?"
-    icon="comment"
-  >
-    Want a reaction entry to be added or notice any errors? Let us know to have suggestions implemented!
-  </Card>
-</CardGroup>
+<Banner />
 
 
 
