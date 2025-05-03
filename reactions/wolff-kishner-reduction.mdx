@@ -3,34 +3,102 @@ title: Wolff-Kishner Reduction
 description: 'Method to convert Aldehydes and Ketones to Methylenes'
 ---
 
-<a href="" target="_blank" rel="noopener noreferrer">
   <img
-    noZoom
     className="block dark:hidden -mt-0"
     src="/reactions/wolff-kishner-reduction-images/overviewdark.png"
     alt="Hero Light"
   />
   <img
-    noZoom
     className="hidden dark:block -mt-0"
     src="/reactions/wolff-kishner-reduction-images/overviewlight.png"
     alt="Hero Dark"
   />
-</a>
 
-The Wolff–Kishner reduction is a classic organic reaction that reduces aldehydes and ketones to alkanes by converting the carbonyl group into a methylene (–CH₂) group. First reported by Nikolai Kishner in 1911 and independently by Ludwig Wolff in 1912, this reaction is especially useful for base-stable substrates where acidic conditions (like in the Clemmensen reduction) would be unsuitable.
+<>
+  {`The Wolff–Kishner reduction is a classic organic reaction that reduces aldehydes and ketones to alkanes by converting the carbonyl group to a methylene group (alkane). `}
+  <Tooltip tip={<div className="text-left leading-tight" style={{ fontSize: '11px', lineHeight: '1.2' }}>Kishner, N. Wolff–Kishner reduction; Huang–Minlon modification. <em>J. Russ. Phys. Chem. Soc.</em> <strong>1911</strong>, <em>43</em>, 582–595.</div>}>
+    <sup><a id="fnref1" href="#fn1" className="underline text-blue-600 dark:text-blue-400 text-xs">[1]</a></sup>
+  </Tooltip>{' '}
+  <Tooltip tip={<div className="text-left leading-tight" style={{ fontSize: '11px', lineHeight: '1.2' }}>Wolff, L. Methode zum Ersatz des Sauerstoffatoms der Ketone und Aldehyde durch Wasserstoff. <em>Justus Liebigs Ann. Chem.</em> <strong>1912</strong>, <em>394</em>, 86–108. <br /><span style={{ fontWeight: '600' }}>DOI:</span>{' '}
+    <a href="https://doi.org/10.1002/jlac.19123940107" target="_blank" rel="noopener noreferrer" className="underline text-blue-700 dark:text-blue-400">
+      https://doi.org/10.1002/jlac.19123940107
+    </a>
+  </div>}>
+    <sup><a id="fnref2" href="#fn2" className="underline text-blue-600 dark:text-blue-400 text-xs">[2]</a></sup>
+  </Tooltip>{' '}
+  <Tooltip tip={<div className="text-left leading-tight" style={{ fontSize: '11px', lineHeight: '1.2' }}>Clayden, J.; Greeves, N.; Warren, S. Organic Chemistry, 2nd ed.; Oxford University Press: Oxford, <strong>2012</strong>.</div>}>
+    <sup><a id="fnref3" href="#fn3" className="underline text-blue-600 dark:text-blue-400 text-xs">[3]</a></sup>
+  </Tooltip>{' '}
+  <Tooltip tip={<div className="text-left leading-tight" style={{ fontSize: '12.5px', lineHeight: '1.2' }}>Verma, D. K.; Dewangan, Y.; Verma, C. Handbook of Organic Name Reactions. Elsevier, <strong>2023</strong>; pp 155–241.</div>}>
+    <sup><a id="fnref4" href="#fn4" className="underline text-blue-600 dark:text-blue-400 text-xs">[4]</a></sup>
+  </Tooltip>
+  {` First reported by Nikolai Kishner in 1911 and independently by Ludwig Wolff in 1912, this reaction is especially useful for base-stable substrates where acidic conditions (like in the Clemmensen reduction) would be unsuitable. `}
+  <Tooltip tip={<div className="text-left leading-tight" style={{ fontSize: '11px', lineHeight: '1.2' }}>Kishner, N. Wolff–Kishner reduction; Huang–Minlon modification. <em>J. Russ. Phys. Chem. Soc.</em> <strong>1911</strong>, <em>43</em>, 582–595.</div>}>
+    <sup><a id="fnref1-repeat" href="#fn1" className="underline text-blue-600 dark:text-blue-400 text-xs">[1]</a></sup>
+  </Tooltip>{' '}
+  <Tooltip tip={<div className="text-left leading-tight" style={{ fontSize: '11px', lineHeight: '1.2' }}>Wolff, L. Methode zum Ersatz des Sauerstoffatoms der Ketone und Aldehyde durch Wasserstoff. <em>Justus Liebigs Ann. Chem.</em> <strong>1912</strong>, <em>394</em>, 86–108. <br /><span style={{ fontWeight: '600' }}>DOI:</span>{' '}
+    <a href="https://doi.org/10.1002/jlac.19123940107" target="_blank" rel="noopener noreferrer" className="underline text-blue-700 dark:text-blue-400">
+      https://doi.org/10.1002/jlac.19123940107
+    </a>
+  </div>}>
+    <sup><a id="fnref2-repeat" href="#fn2" className="underline text-blue-600 dark:text-blue-400 text-xs">[2]</a></sup>
+  </Tooltip>{' '}
+  <Tooltip tip={<div className="text-left leading-tight" style={{ fontSize: '11px', lineHeight: '1.2' }}>Clayden, J.; Greeves, N.; Warren, S. Organic Chemistry, 2nd ed.; Oxford University Press: Oxford, <strong>2012</strong>.</div>}>
+    <sup><a id="fnref3-repeat" href="#fn3" className="underline text-blue-600 dark:text-blue-400 text-xs">[3]</a></sup>
+  </Tooltip>{' '}
+  <Tooltip tip={<div className="text-left leading-tight" style={{ fontSize: '12.5px', lineHeight: '1.2' }}>Verma, D. K.; Dewangan, Y.; Verma, C. Handbook of Organic Name Reactions. Elsevier, <strong>2023</strong>; pp 155–241.</div>}>
+    <sup><a id="fnref4-repeat" href="#fn4" className="underline text-blue-600 dark:text-blue-400 text-xs">[4]</a></sup>
+  </Tooltip>
+</>
+
+
+
 
 ## Predicting the Product
 
-This section is a brief overview on how to find the product for a ketone using a example from a real scientific research paper. The mechanism and steps are the same for aldehyde conversion.
+ <>
+  {`This section is a brief overview on how to find the product for a ketone using an example from Kuznetsov et al. (1992). `}
+  <Tooltip
+    tip={
+      <div
+        className="text-left leading-tight"
+        style={{ fontSize: '11px', lineHeight: '1.2' }}
+      >
+        Kuznetsov, A. I.; Vladimirova, I. A.; Serova, T. M.; Moskovkin, A. S.{' '}
+        <a
+          href="https://doi.org/10.1007/BF00475255"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline text-blue-700 dark:text-blue-400"
+        >
+          Heteroadamantanes and Their Derivatives. 17. Wolff–Kishner Reduction of 3,6-Diazahomoadamantan-9-ones.
+        </a>{' '}
+        Chem. Heterocycl. Compd. <strong>1992</strong>, <em>28</em>, 551–555. <br />
+        <span style={{ fontWeight: '600' }}>DOI:</span>{' '}
+        <a
+          href="https://doi.org/10.1007/BF00475255"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline text-blue-700 dark:text-blue-400"
+        >
+          https://doi.org/10.1007/BF00475255
+        </a>
+      </div>
+    }
+  >
+    <sup><a id="fnref5" href="#fn5" className="underline text-blue-600 dark:text-blue-400 text-xs">[5]</a></sup>
+  </Tooltip>{' '}
+  {`The mechanism and steps are the same for aldehyde conversion.`}
+</>
+
 
 <img
-    className="block dark:hidden mt-0"
+    className="block dark:hidden mt-6"
     src="/reactions/wolff-kishner-reduction-images/examplelight.png"
     alt="Hero Light"
   />
   <img
-    className="hidden dark:block mt-0"
+    className="hidden dark:block mt-6"
     src="/reactions/wolff-kishner-reduction-images/exampledark.png"
     alt="Hero Dark"
   />
@@ -60,10 +128,10 @@ This section is a brief overview on how to find the product for a ketone using a
     </a>
   </div>
   <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
-    Figure 1: Schematic representation of the Wolff–Kishner reduction of 3,6-diazahomoadamantan-9-ones (Ia–g) as described by Kuznetsov et al.
+    Reduction of 3,6-diazahomoadamantan-9-ones (Ia–g) as described by Kuznetsov et al.
   </p>
   <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
- The ketones undergo condensation with hydrazine hydrate to afford hydrazones (IIa–e, g), which, upon heating with base, yield the corresponding 3,6-diazahomoadamantanes (IIIb–e, g). Notably, the unsubstituted hydrazone (IIa) undergoes thermal decomposition to form the azine dimer (IVa) instead of the reduced amine. Similar azines (IVb–d) are obtained from substituted hydrazones at elevated temperatures.
+ Depending on the pathway, the methylene product or azine product is formed.
   </p>
 </div>
 
@@ -71,24 +139,40 @@ This study explores the Wolff–Kishner reduction of 3,6-diazahomoadamantan-9-on
 
   </Accordion>
   <Accordion title="How is this Reaction used in the paper?">
-    <a href="" target="_blank" rel="noopener noreferrer">
-  <img
-    noZoom
-    className="block dark:hidden mt-2"
-    src="/reactions/wolff-kishner-reduction-images/citation2light.png"
-    alt="Hero Light"
-  />
-  <img
-    noZoom
-    className="hidden dark:block mt-2"
-    src="/reactions/wolff-kishner-reduction-images/citation2dark.png"
-    alt="Hero Dark"
-  />
-</a>
+  <div className="text-center">
+  <div>
+    <a 
+      href="" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <img
+        noZoom
+        className="block dark:hidden mt-2"
+        src="/reactions/wolff-kishner-reduction-images/citation2light.png"
+        alt="Hero Light"
+        title=""
+      />
+      <img
+        noZoom
+        className="hidden dark:block mt-2"
+        src="/reactions/wolff-kishner-reduction-images/citation2dark.png"
+        alt="Hero Dark"
+        title=""
+      />
+    </a>
+  </div>
+  <p className="mt-2 text-sm font-bold text-gray-600 dark:text-gray-400">
+    Schematic representation of the Wolff–Kishner reduction of 3,6-diazahomoadamantan-9-ones (Ia–g) as described by Kuznetsov et al.
+  </p>
+  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+ This reaction yielded 3,6-diazahomoadamantanes (IIIb–e, g) from substituted ketones, while the unsubstituted analog (IIa) formed azine dimer IVa upon thermal decomposition.
+  </p>
+</div>
 
-In this study, the Wolff–Kishner reduction was used to convert 3,6-diazahomoadamantan-9-one hydrazones (compounds IIb–e, IIg) into their corresponding methylene derivatives (IIIb–e, IIIg). 
+In this study, the Wolff–Kishner reduction began with the formation of hydrazones by reacting substituted diazahomoadamantanones (Ia–e, Ig) with excess hydrazine hydrate. 
 
-The process began with the formation of hydrazones by reacting substituted diazahomoadamantanones (Ia–e, Ig) with excess hydrazine hydrate. These hydrazones were then subjected to thermal decomposition by heating them with powdered potassium hydroxide at high temperatures (220–240 °C) for 2–3 hours. Upon cooling, the mixtures were extracted with ether, and the crude products were purified either through sublimation or recrystallization. 
+These hydrazones were then subjected to thermal decomposition by heating them with powdered potassium hydroxide at high temperatures (220–240 °C) for 2–3 hours. Upon cooling, the mixtures were extracted with ether, and the crude products were purified either through sublimation or recrystallization. 
 
 This sequence effectively reduced the ketone group to a methylene yielding stable 3,6-diazahomoadamantanes.
 
@@ -113,7 +197,23 @@ This sequence effectively reduced the ketone group to a methylene yielding stabl
   />
 </a>
 
-When a carbonyl compound is heated with hydrazine in the presence of a strong base like KOH or potassium tert-butoxide, the carbonyl group is converted to a methylene (–CH2) group.
+<>
+  {`When a carbonyl compound is heated with hydrazine in the presence of a strong base like KOH or KOtBu potassium tert-butoxide, the carbonyl group is converted to a methylene (–CH₂) group.`}{' '}
+  <Tooltip tip={
+    <div className="text-left leading-tight" style={{ fontSize: '11px', lineHeight: '1.2' }}>
+      Clayden, J.; Greeves, N.; Warren, S. Organic Chemistry, 2nd ed.; Oxford University Press: Oxford, <strong>2012</strong>.
+    </div>
+  }>
+    <sup><a id="fnref3" href="#fn3" className="underline text-blue-600 dark:text-blue-400 text-xs">[3]</a></sup>
+  </Tooltip>{' '}
+  <Tooltip tip={
+    <div className="text-left leading-tight" style={{ fontSize: '12.5px', lineHeight: '1.2' }}>
+      Verma, D. K.; Dewangan, Y.; Verma, C. Handbook of Organic Name Reactions. Elsevier, <strong>2023</strong>; pp 155–241.
+    </div>
+  }>
+    <sup><a id="fnref4" href="#fn4" className="underline text-blue-600 dark:text-blue-400 text-xs">[4]</a></sup>
+  </Tooltip>
+</>
     
   </Step>
   <Step title="Identify the target carbonyl group and subsequent steps">
@@ -131,7 +231,25 @@ When a carbonyl compound is heated with hydrazine in the presence of a strong ba
     alt="Hero Dark"
   />
 </a>
-    Once we've identified the target carbonyl (in this case, a ketone), we can guess two steps are needed to fully convert the carbonyl to the methylene group. Now we need to identify and use the general scheme for Wolff-Kishner to solve for the product.
+
+    <>
+  {`Once we’ve identified the target carbonyl (in this case, a ketone), we can guess two steps are needed to fully convert the carbonyl to the methylene group. Now we need to identify and use the general scheme for Wolff–Kishner to solve for the product.`}{' '}
+  <Tooltip tip={
+    <div className="text-left leading-tight" style={{ fontSize: '11px', lineHeight: '1.2' }}>
+      Clayden, J.; Greeves, N.; Warren, S. Organic Chemistry, 2nd ed.; Oxford University Press: Oxford, <strong>2012</strong>.
+    </div>
+  }>
+    <sup><a id="fnref3-repeat" href="#fn3" className="underline text-blue-600 dark:text-blue-400 text-xs">[3]</a></sup>
+  </Tooltip>{' '}
+  <Tooltip tip={
+    <div className="text-left leading-tight" style={{ fontSize: '12.5px', lineHeight: '1.2' }}>
+      Verma, D. K.; Dewangan, Y.; Verma, C. Handbook of Organic Name Reactions. Elsevier, <strong>2023</strong>; pp 155–241.
+    </div>
+  }>
+    <sup><a id="fnref4-repeat" href="#fn4" className="underline text-blue-600 dark:text-blue-400 text-xs">[4]</a></sup>
+  </Tooltip>
+</>
+  
   </Step>
   <Step title="Identify the General Scheme">
   <a href="" target="_blank" rel="noopener noreferrer">
@@ -148,7 +266,25 @@ When a carbonyl compound is heated with hydrazine in the presence of a strong ba
     alt="Hero Dark"
   />
 </a>
-    The Wolff-Kishner reaction starts with the Ketone (or Aldehyde) and are converted to Hydrazones using Hydrazine. This is followed by Hydrazone conversion to Methylene using a strong base (KOH) and heat (Δ)
+
+   <>
+  {`The Wolff–Kishner reaction starts with the ketone (or aldehyde) and converts it to a hydrazone using hydrazine. This is followed by hydrazone conversion to methylene using a strong base such as KOH and heat (Δ).`}{' '}
+  <Tooltip tip={
+    <div className="text-left leading-tight" style={{ fontSize: '11px', lineHeight: '1.2' }}>
+      Clayden, J.; Greeves, N.; Warren, S. Organic Chemistry, 2nd ed.; Oxford University Press: Oxford, <strong>2012</strong>.
+    </div>
+  }>
+    <sup><a id="fnref3-scheme" href="#fn3" className="underline text-blue-600 dark:text-blue-400 text-xs">[3]</a></sup>
+  </Tooltip>{' '}
+  <Tooltip tip={
+    <div className="text-left leading-tight" style={{ fontSize: '12.5px', lineHeight: '1.2' }}>
+      Verma, D. K.; Dewangan, Y.; Verma, C. Handbook of Organic Name Reactions. Elsevier, <strong>2023</strong>; pp 155–241.
+    </div>
+  }>
+    <sup><a id="fnref4-scheme" href="#fn4" className="underline text-blue-600 dark:text-blue-400 text-xs">[4]</a></sup>
+  </Tooltip>
+</>
+ 
   </Step>
 <Step title="Directly apply the scheme to determine product">
 <a href="" target="_blank" rel="noopener noreferrer">
@@ -165,7 +301,41 @@ When a carbonyl compound is heated with hydrazine in the presence of a strong ba
     alt="Hero Dark"
   />
 </a>
-    The scheme can be directly applied as done by Kuznetsov et al. (1992) to create the alkane product.
+    
+<>
+  {`The scheme can be directly applied as done by Kuznetsov et al. (1992) to create the alkane product.`}{' '}
+  <Tooltip
+    tip={
+      <div
+        className="text-left leading-tight"
+        style={{ fontSize: '11px', lineHeight: '1.2' }}
+      >
+        Kuznetsov, A. I.; Vladimirova, I. A.; Serova, T. M.; Moskovkin, A. S.{' '}
+        <a
+          href="https://doi.org/10.1007/BF00475255"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline text-blue-700 dark:text-blue-400"
+        >
+          Heteroadamantanes and Their Derivatives. 17. Wolff–Kishner Reduction of 3,6-Diazahomoadamantan-9-ones.
+        </a>{' '}
+        Chem. Heterocycl. Compd. <strong>1992</strong>, <em>28</em>, 551–555. <br />
+        <span style={{ fontWeight: '600' }}>DOI:</span>{' '}
+        <a
+          href="https://doi.org/10.1007/BF00475255"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline text-blue-700 dark:text-blue-400"
+        >
+          https://doi.org/10.1007/BF00475255
+        </a>
+      </div>
+    }
+  >
+    <sup><a id="fnref5" href="#fn5" className="underline text-blue-600 dark:text-blue-400 text-xs">[5]</a></sup>
+  </Tooltip>
+</>
+
   </Step>
 </Steps>
 
@@ -289,7 +459,7 @@ This section briefly summarizes what can and cannot undergo reactions.
   alt="Hero Dark"
 />
 
-- Wolff-Kishner uses Hydrazine (H2NNH2), a strong base (KOH or t-BuOK), and heat
+- Wolff-Kishner uses Hydrazine (H₂N–NH₂), a strong base (KOH or KOtBu), and heat
 - Carbonyls are converted into a methylene (–CH₂) group (alkane)
 - All reactions, follow a general scheme:
 
@@ -337,6 +507,48 @@ This section briefly summarizes steps to find the product and perform the mechan
 
 </Accordion>
 
-<Tip>Always remember to repeatedly practice your mechanisms and getting your reagents correct. Take advantage of our materials and/or keep practicing on a whiteboard or paper until you get it right every single time. </Tip>
+<Tip>
+Always remember to repeatedly practice your mechanisms and getting your reagents correct. Take advantage of our materials and/or keep practicing on a whiteboard or paper until you get it right every single time.
+</Tip>
 
 ## References
+
+<p id="fn1" className="text-xs mt-4">
+  [1] Kishner, N. <em>Wolff–Kishner reduction; Huang–Minlon modification.</em> <em>J. Russ. Phys. Chem. Soc.</em> <strong>1911</strong>, <em>43</em>, 582–595.
+  <a href="#fnref1" className="ml-2 text-blue-600 dark:text-blue-400">↩</a>
+</p>
+
+<p id="fn2" className="text-xs mt-4">
+  [2] Wolff, L. <em>Chemischen Institut der Universität Jena: Methode zum Ersatz des Sauerstoffatoms der Ketone und Aldehyde durch Wasserstoff. [Erste Abhandlung]</em>. <em>Justus Liebigs Ann. Chem.</em> <strong>1912</strong>, <em>394</em>, 86–108. https://doi.org/10.1002/jlac.19123940107
+  <a href="#fnref2" className="ml-2 text-blue-600 dark:text-blue-400">↩</a>
+</p>
+
+<p id="fn3" className="text-xs mt-4">
+  [3] Clayden, J.; Greeves, N.; Warren, S. <em>Organic Chemistry</em>, 2nd ed.; Oxford University Press: Oxford, <strong>2012</strong>.
+  <a href="#fnref3" className="ml-2 text-blue-600 dark:text-blue-400">↩</a>
+</p>
+
+<p id="fn4" className="text-xs mt-4">
+  [4] Verma, D. K.; Dewangan, Y.; Verma, C. Reactions of Aldehydes and Ketones. In <em>Handbook of Organic Name Reactions</em>; Verma, D. K., Dewangan, Y., Verma, C., Eds.; Elsevier: <strong>2023</strong>; pp 155–241.
+  <a href="#fnref4" className="ml-2 text-blue-600 dark:text-blue-400">↩</a>
+</p>
+
+<a href="https://doi.org/10.1007/BF00475255" target="_blank" rel="noopener noreferrer">
+  <img
+    noZoom
+    className="block dark:hidden mt-4"
+    src="/reactions/wolff-kishner-reduction-images/citationsquaredlight.png"
+    alt="Hero Light"
+  />
+  <img
+    noZoom
+    className="hidden dark:block mt-4"
+    src="/reactions/wolff-kishner-reduction-images/citationsquareddark.png"
+    alt="Hero Dark"
+  />
+</a>
+
+<p id="fn5" className="text-xs mt-4">
+  [5] Kuznetsov, A. I.; Vladimirova, I. A.; Serova, T. M.; Moskovkin, A. S. <em>Heteroadamantanes and Their Derivatives. 17. Wolff–Kishner Reduction of 3,6-Diazahomoadamantan-9-ones.</em> <em>Chem. Heterocycl. Compd.</em> <strong>1992</strong>, <em>28</em>, 551–555. https://doi.org/10.1007/BF00475255
+  <a href="#fnref5" className="ml-2 text-blue-600 dark:text-blue-400">↩</a>
+</p>
